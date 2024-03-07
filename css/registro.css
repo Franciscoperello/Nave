@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'fuenteNave';
+    src: url('../fonts/04B_30__.TTF') format('truetype');
+}
+h2{
+   font-family: fuenteNave;
+   text-align: center;
+   padding-top: 20px;
+}
+.modal {
+    width: 500px;
+    height: 350px;
+    margin-top: 40%;
+    margin-left: 30%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3131c1, rgb(195, 20, 195),#e57147, rgb(234, 182, 85));
+    position: relative;
+    z-index: 1;
+    padding:0;
+}
+hr {
+    height: 3px;
+    background-color: white;
+    width: 99.5%;
+}
+
+form {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.cerrar {
+    color: #aaaaaa;
+    position:absolute;
+    right:10px;
+    top: -30px;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+}
+  
+.cerrar:hover, .cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#botonRegistro {
+    border-radius: 5px;
+    background-color: #5eaedd;
+    font-family: "fuenteNave";
+    padding: 3px;
+    border: 1px solid black;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    
+}
+
+#miModal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}

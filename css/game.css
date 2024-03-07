@@ -1,0 +1,130 @@
+body{
+    overflow: hidden;
+}
+
+#game {
+    top: 13vh;
+    left: 20%;
+    position: relative;
+    height:83vh;
+    width: 69.5%;
+    border: 1px solid white;
+    margin: -10px;
+}
+#derrota{
+    text-align: center;
+    display: none;
+    top: 400px;
+    left: 200px;
+    width: 200px;
+}
+.bullet {
+    height: 10px;
+    width: 5px;
+    position: absolute;
+    background: lightskyblue;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;    
+}
+.ship {
+    height: 60px;
+    width: 40px;
+    bottom: 0;
+    position: absolute;
+}
+.enemy {
+    position: absolute;
+    height: 50px;
+    width: 40px;
+}
+
+#contador{
+    float: left;
+    color: white;
+}
+
+.estrellas {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+body {
+  background:#000 url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghj9bINwCLBHb0eisbsNyPta830j-lSGy4cxwQnPh2D7G5VW6meZHUR8pBe_FeU-IlijZx23mDRFoBk_BkS5cma2urzcwJYMsWepbzT_1KfppJMQLfe_Uio4al0zMDPqxWNOyNByDPCdg/s1600/estrellas.png) repeat top center;
+}
+
+.estrellas{
+  background:transparent url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb_g8J7zQ1NSrzDIvootgPmtS9ivyjNQcAK1vhkReSLqVfyVYx-2v_Z4f5IV9LvFXGToZauTFFTYCXb5nLSVPAKZkG6ox8slt6hPqK0f6xck9jjnZa1vPSYCWLOf272Ezj7SmMgA5PTWQ/s1600/twinkling.png) repeat top center;
+  z-index:-2;
+
+  -moz-animation:move-twink-back 100s linear infinite;
+  -ms-animation:move-twink-back 100s linear infinite;
+  -o-animation:move-twink-back 100s linear infinite;
+  -webkit-animation:move-twink-back 100s linear infinite;
+  animation:move-twink-back 100s linear infinite;
+}
+
+.neon-border {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px red, 0 0 15px blue, 0 0 15px yellow, 0 0 15px purple;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        box-shadow: 0 0 15px red, 0 0 15px blue, 0 0 15px yellow, 0 0 15px purple;
+    }
+    to {
+        box-shadow: 0 0 10px red, 0 0 10px blue, 0 0 10px yellow, 0 0 10px purple;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2, .sidebar h3 {
+    color: white;
+}
+
+.icono {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}

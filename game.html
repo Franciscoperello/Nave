@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Naves</title>
+    <link rel="stylesheet" type="text/css" href="./css/game.css"/>
+    <script src="./js/funcionalidades.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 id="nombreJugador">Jugador: </h2>
+        <h3 style="color: white;" id="valor">Puntuación: 0</h3>
+        <h3 style="color: white;" id="tiempo">Tiempo: 0s</h3>
+        <img id="icoPantalla" src="./imagenes/pNComple.png" class="icono" onclick="estiloPantalla()">
+    </div>
+
+    <div id="game" class="estrellas">
+        <img src="./imagenes/ship.png" id="ship" class="ship"/>
+    </div>
+    <dialog id="derrota">
+        <h3>Has perdido</h3>
+        <p id="putnuacion"></p>
+        <p id="tSobre"></p>
+    </dialog>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
